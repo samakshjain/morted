@@ -1,0 +1,13 @@
+<p>This is the playlist view.</p>
+<a class='panel' ng-repeat="tk in id.talks" ng-href='#/videopage' ng-click="setvid(tk.talk.id)">
+	<br></br>
+	<span class="glyphicon glyphicon-chevron-right" aria-hidden="true">	{{tk.talk.name}} </span>
+			<div class="panel panel-default">
+				  <div class="panel-body">
+				    {{tk.talk.description}}
+				  </div>
+			</div>
+
+	</a>
+	
+

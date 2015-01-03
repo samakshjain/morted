@@ -1,0 +1,30 @@
+<div class="container">
+  <iframe class="center"src="https://embed-ssl.ted.com/talks/lang/en/aakash_odedra_a_dance_in_a_hurricane_of_paper_wind_and_light.html" width="854" height="480" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+</div>
+
+<p class="col-xs-6">
+       Watch a Playlist:
+
+	<a class='panel' ng-repeat="plays in play.playlists" href="#playlist" ng-click='set(plays.playlist.list)'>
+	<br></br>
+	{{plays.playlist.title}} 
+
+	</a>
+
+</p>
+
+<br></br>
+
+<p class="col-xs-6" style="align:top"> 
+  Choose a common tag:
+  <a class='panel' ng-repeat="tags in play.tags" ng-href="#/taglist" ng-click='set(tags.rating_word.name)'>
+	<br></br>
+  {{tags.rating_word.name}} &nbsp;
+  </a>
+<br></br>
+</p>
+<p>{{tag}}</p>
+
+
+		
+
